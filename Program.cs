@@ -12,7 +12,8 @@ namespace DataStructureAlgorithams
                 Console.WriteLine("Welcome To Datastructures and Algorithms");
                 Console.WriteLine("1) Permutation of string Using Recursion\n" +
                                   "2) BinarySearch of a word from Text File\n" +
-                                  "3) Insertion Sort\n");
+                                  "3) Insertion Sort\n" +
+                                  "4) Bubble Sorting\n");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -28,6 +29,10 @@ namespace DataStructureAlgorithams
                     case 3:
                         InsertionSort insertionsortobj = new InsertionSort();
                         insertionsortobj.insertionSort();
+                        break;
+                    case 4:
+                        BubbleSort bubblesortobj = new BubbleSort();
+                        bubblesortobj.bubbleSort();
                         break;
                 }
             }
