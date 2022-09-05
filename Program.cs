@@ -14,7 +14,8 @@ namespace DataStructureAlgorithams
                                   "2) BinarySearch of a word from Text File\n" +
                                   "3) Insertion Sort\n" +
                                   "4) Bubble Sorting\n" +
-                                  "5) Merge Sort\n");
+                                  "5) Merge Sort\n" +
+                                  "6) Anagram Detection Program\n");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -58,6 +59,10 @@ namespace DataStructureAlgorithams
                         for (int i = 0; i < max; i++)
                             Console.WriteLine(numbers[i]);
                         Console.ReadLine();
+                        break;
+                    case 6:
+                        Anagrams anagrams = new Anagrams();
+                        anagrams.checkAnagrams();
                         break;
                 }
             }
