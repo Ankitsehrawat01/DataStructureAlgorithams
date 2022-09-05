@@ -15,7 +15,8 @@ namespace DataStructureAlgorithams
                                   "3) Insertion Sort\n" +
                                   "4) Bubble Sorting\n" +
                                   "5) Merge Sort\n" +
-                                  "6) Anagram Detection Program\n");
+                                  "6) Anagram Detection Program\n" +
+                                  "7) Prime Numbers between 0 - 1000\n");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -63,6 +64,10 @@ namespace DataStructureAlgorithams
                     case 6:
                         Anagrams anagrams = new Anagrams();
                         anagrams.checkAnagrams();
+                        break;
+                    case 7:
+                        PrimeNumber primenumbersobj = new PrimeNumber();
+                        primenumbersobj.Numbers();
                         break;
                 }
             }
