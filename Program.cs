@@ -17,7 +17,8 @@ namespace DataStructureAlgorithams
                                   "5) Merge Sort\n" +
                                   "6) Anagram Detection Program\n" +
                                   "7) Prime Numbers between 0 - 1000\n" +
-                                  "8) Anagram And Palindrome Number\n");
+                                  "8) Anagram And Palindrome Number\n" +
+                                  "9) Searching And Sorting Using Generics\n");
                 Console.WriteLine("Enter Your Option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -73,6 +74,10 @@ namespace DataStructureAlgorithams
                     case 8:
                         AnagramAndPalindromeNumber anagramandpalindromenumberobj = new AnagramAndPalindromeNumber();
                         anagramandpalindromenumberobj.anagramAndPalindrome();
+                        break;
+                    case 9:
+                        SearchingAndSortingUsingGenerics searchingandsortingusinggenerics = new SearchingAndSortingUsingGenerics();
+                        searchingandsortingusinggenerics.SearchingAndSorting();
                         break;
                 }
             }
